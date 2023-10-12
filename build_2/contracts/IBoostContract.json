@@ -1,0 +1,265 @@
+{
+  "contractName": "IBoostContract",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_user",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_lockedAmount",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_lockedDuration",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_totalLockedAmount",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_maxLockDuration",
+          "type": "uint256"
+        }
+      ],
+      "name": "onShdwPoolUpdate",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.1+commit.df193b15\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_user\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"_lockedAmount\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"_lockedDuration\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"_totalLockedAmount\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"_maxLockDuration\",\"type\":\"uint256\"}],\"name\":\"onShdwPoolUpdate\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/interfaces/IBoostContract.sol\":\"IBoostContract\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":99999},\"remappings\":[]},\"sources\":{\"project:/contracts/interfaces/IBoostContract.sol\":{\"keccak256\":\"0xf658b4b89261acc9db882be140d3448ab09a52197c58ad167c2b8f8bdd4800e5\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://bfeaffe6e8075707340f568009893c998a4e92f80079e70fe88b49feae64ba27\",\"dweb:/ipfs/QmaaEhjRVza8Vgi1J61r1zR2aVCcbrhmtmEfRyhQjqVjVN\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: MIT\r\npragma solidity ^0.8.0;\r\n\r\ninterface IBoostContract {\r\n    function onShdwPoolUpdate(\r\n        address _user,\r\n        uint256 _lockedAmount,\r\n        uint256 _lockedDuration,\r\n        uint256 _totalLockedAmount,\r\n        uint256 _maxLockDuration\r\n    ) external;\r\n}",
+  "sourcePath": "D:\\Other_Folder\\ANGGA\\NFT\\CLIENT\\MAS WIDI NEW\\NewVenosSmartContract\\contracts\\interfaces\\IBoostContract.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/interfaces/IBoostContract.sol",
+    "exportedSymbols": {
+      "IBoostContract": [
+        3544
+      ]
+    },
+    "id": 3545,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 3530,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "33:23:8"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 3544,
+        "linearizedBaseContracts": [
+          3544
+        ],
+        "name": "IBoostContract",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "functionSelector": "87356ef7",
+            "id": 3543,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "onShdwPoolUpdate",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 3541,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 3532,
+                  "mutability": "mutable",
+                  "name": "_user",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3543,
+                  "src": "128:13:8",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 3531,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "128:7:8",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 3534,
+                  "mutability": "mutable",
+                  "name": "_lockedAmount",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3543,
+                  "src": "152:21:8",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 3533,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "152:7:8",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 3536,
+                  "mutability": "mutable",
+                  "name": "_lockedDuration",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3543,
+                  "src": "184:23:8",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 3535,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "184:7:8",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 3538,
+                  "mutability": "mutable",
+                  "name": "_totalLockedAmount",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3543,
+                  "src": "218:26:8",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 3537,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "218:7:8",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 3540,
+                  "mutability": "mutable",
+                  "name": "_maxLockDuration",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3543,
+                  "src": "255:24:8",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 3539,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "255:7:8",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "117:169:8"
+            },
+            "returnParameters": {
+              "id": 3542,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "295:0:8"
+            },
+            "scope": 3544,
+            "src": "92:204:8",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 3545,
+        "src": "60:239:8"
+      }
+    ],
+    "src": "33:266:8"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.1+commit.df193b15.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.16",
+  "updatedAt": "2023-10-12T08:29:29.998Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}

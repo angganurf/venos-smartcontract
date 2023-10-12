@@ -1,0 +1,496 @@
+{
+  "contractName": "IShdwPool",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_user",
+          "type": "address"
+        }
+      ],
+      "name": "userInfo",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint256",
+              "name": "shares",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "lastDepositedTime",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "shdwAtLastUserAction",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "lastUserActionTime",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "lockStartTime",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "lockEndTime",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "userBoostedShare",
+              "type": "uint256"
+            },
+            {
+              "internalType": "bool",
+              "name": "locked",
+              "type": "bool"
+            },
+            {
+              "internalType": "uint256",
+              "name": "lockedAmount",
+              "type": "uint256"
+            }
+          ],
+          "internalType": "struct IShdwPool.UserInfo",
+          "name": "",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.5+commit.a4f2e591\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_user\",\"type\":\"address\"}],\"name\":\"userInfo\",\"outputs\":[{\"components\":[{\"internalType\":\"uint256\",\"name\":\"shares\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"lastDepositedTime\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"shdwAtLastUserAction\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"lastUserActionTime\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"lockStartTime\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"lockEndTime\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"userBoostedShare\",\"type\":\"uint256\"},{\"internalType\":\"bool\",\"name\":\"locked\",\"type\":\"bool\"},{\"internalType\":\"uint256\",\"name\":\"lockedAmount\",\"type\":\"uint256\"}],\"internalType\":\"struct IShdwPool.UserInfo\",\"name\":\"\",\"type\":\"tuple\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/interfaces/IShdwPool.sol\":\"IShdwPool\"},\"evmVersion\":\"berlin\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":99999},\"remappings\":[]},\"sources\":{\"project:/contracts/interfaces/IShdwPool.sol\":{\"keccak256\":\"0xf9e7605002eac06339f3a860a2ee350230b22416d7378fecb9b879eb59abc3a5\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://db26d9615bb42a451f74d6627010821955b73b3e4665e2fe0691536d4c6474b0\",\"dweb:/ipfs/QmTSspMkkcSv1BW2iWHuv7ugFGBvpK69jYYhTT5iZF5sQ7\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: MIT\r\npragma solidity 0.8.5;\r\npragma experimental ABIEncoderV2;\r\n\r\ninterface IShdwPool {\r\n  struct UserInfo {\r\n    uint256 shares;\r\n    uint256 lastDepositedTime;\r\n    uint256 shdwAtLastUserAction;\r\n    uint256 lastUserActionTime;\r\n    uint256 lockStartTime;\r\n    uint256 lockEndTime;\r\n    uint256 userBoostedShare;\r\n    bool locked;\r\n    uint256 lockedAmount;\r\n  }\r\n\r\n  function userInfo(address _user) external view returns (UserInfo memory);\r\n}\r\n",
+  "sourcePath": "D:\\Other_Folder\\ANGGA\\NFT\\CLIENT\\MAS WIDI NEW\\NewVenosSmartContract\\contracts\\interfaces\\IShdwPool.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/interfaces/IShdwPool.sol",
+    "exportedSymbols": {
+      "IShdwPool": [
+        1347
+      ]
+    },
+    "id": 1348,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1318,
+        "literals": [
+          "solidity",
+          "0.8",
+          ".5"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "33:22:8"
+      },
+      {
+        "id": 1319,
+        "literals": [
+          "experimental",
+          "ABIEncoderV2"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "57:33:8"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 1347,
+        "linearizedBaseContracts": [
+          1347
+        ],
+        "name": "IShdwPool",
+        "nameLocation": "104:9:8",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "canonicalName": "IShdwPool.UserInfo",
+            "id": 1338,
+            "members": [
+              {
+                "constant": false,
+                "id": 1321,
+                "mutability": "mutable",
+                "name": "shares",
+                "nameLocation": "150:6:8",
+                "nodeType": "VariableDeclaration",
+                "scope": 1338,
+                "src": "142:14:8",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 1320,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "142:7:8",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 1323,
+                "mutability": "mutable",
+                "name": "lastDepositedTime",
+                "nameLocation": "171:17:8",
+                "nodeType": "VariableDeclaration",
+                "scope": 1338,
+                "src": "163:25:8",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 1322,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "163:7:8",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 1325,
+                "mutability": "mutable",
+                "name": "shdwAtLastUserAction",
+                "nameLocation": "203:20:8",
+                "nodeType": "VariableDeclaration",
+                "scope": 1338,
+                "src": "195:28:8",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 1324,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "195:7:8",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 1327,
+                "mutability": "mutable",
+                "name": "lastUserActionTime",
+                "nameLocation": "238:18:8",
+                "nodeType": "VariableDeclaration",
+                "scope": 1338,
+                "src": "230:26:8",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 1326,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "230:7:8",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 1329,
+                "mutability": "mutable",
+                "name": "lockStartTime",
+                "nameLocation": "271:13:8",
+                "nodeType": "VariableDeclaration",
+                "scope": 1338,
+                "src": "263:21:8",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 1328,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "263:7:8",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 1331,
+                "mutability": "mutable",
+                "name": "lockEndTime",
+                "nameLocation": "299:11:8",
+                "nodeType": "VariableDeclaration",
+                "scope": 1338,
+                "src": "291:19:8",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 1330,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "291:7:8",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 1333,
+                "mutability": "mutable",
+                "name": "userBoostedShare",
+                "nameLocation": "325:16:8",
+                "nodeType": "VariableDeclaration",
+                "scope": 1338,
+                "src": "317:24:8",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 1332,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "317:7:8",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 1335,
+                "mutability": "mutable",
+                "name": "locked",
+                "nameLocation": "353:6:8",
+                "nodeType": "VariableDeclaration",
+                "scope": 1338,
+                "src": "348:11:8",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bool",
+                  "typeString": "bool"
+                },
+                "typeName": {
+                  "id": 1334,
+                  "name": "bool",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "348:4:8",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 1337,
+                "mutability": "mutable",
+                "name": "lockedAmount",
+                "nameLocation": "374:12:8",
+                "nodeType": "VariableDeclaration",
+                "scope": 1338,
+                "src": "366:20:8",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 1336,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "366:7:8",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "name": "UserInfo",
+            "nameLocation": "126:8:8",
+            "nodeType": "StructDefinition",
+            "scope": 1347,
+            "src": "119:273:8",
+            "visibility": "public"
+          },
+          {
+            "functionSelector": "1959a002",
+            "id": 1346,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "userInfo",
+            "nameLocation": "407:8:8",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1341,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1340,
+                  "mutability": "mutable",
+                  "name": "_user",
+                  "nameLocation": "424:5:8",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1346,
+                  "src": "416:13:8",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 1339,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "416:7:8",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "415:15:8"
+            },
+            "returnParameters": {
+              "id": 1345,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1344,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1346,
+                  "src": "454:15:8",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_UserInfo_$1338_memory_ptr",
+                    "typeString": "struct IShdwPool.UserInfo"
+                  },
+                  "typeName": {
+                    "id": 1343,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 1342,
+                      "name": "UserInfo",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 1338,
+                      "src": "454:8:8"
+                    },
+                    "referencedDeclaration": 1338,
+                    "src": "454:8:8",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_UserInfo_$1338_storage_ptr",
+                      "typeString": "struct IShdwPool.UserInfo"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "453:17:8"
+            },
+            "scope": 1347,
+            "src": "398:73:8",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 1348,
+        "src": "94:380:8",
+        "usedErrors": []
+      }
+    ],
+    "src": "33:443:8"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.5+commit.a4f2e591.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.16",
+  "updatedAt": "2023-10-12T10:30:52.840Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}
